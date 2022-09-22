@@ -34,7 +34,7 @@ namespace WindBot.Game.AI
         [DataMember]
         public string[] setmonster { get; set; }
         [DataMember]
-        public string[] chaining { get; set; }                                          
+        public string[] chaining { get; set; }
     }
     public class Dialogs
     {
@@ -53,7 +53,7 @@ namespace WindBot.Game.AI
         private string[] _summon;
         private string[] _setmonster;
         private string[] _chaining;
-        
+
         public Dialogs(GameClient game)
         {
             _game = game;
@@ -82,7 +82,29 @@ namespace WindBot.Game.AI
         {
             InternalSendMessageForced(new[] { "Sorry, an error occurs." });
         }
+        /////zdiy/////
+        public void SendKeyMessage(string name)
+        {
+            switch (name)
+            {
+                case "94-01":
+                    InternalSendMessageForced(new[] { "本人机自94服一届冠军卡组" });
+                    InternalSendMessageForced(new[] { "当前为阉割版(部分卡片已移除服务器卡池)" });
+                    break;
+                case "94-我更帅了":
+                    InternalSendMessageForced(new[] { "人机信息:" });
+                    InternalSendMessageForced(new[] { "Diy By 失智" });
+                    InternalSendMessageForced(new[] { "Script By 神数不神" });
+                    InternalSendMessageForced(new[] { "Creative Time [2022-9-14]-[2022-9-21]" });
+                    InternalSendMessageForced(new[] { "Code 002" });
+                    InternalSendMessageForced(new[] { "【周赛兑换积分人机】" });
+                    break;
+                default:
+                    break;
+            }
 
+        }
+        /////zdiy/////
         public void SendDeckSorry(string card)
         {
             if (card == "DECK")
@@ -118,7 +140,7 @@ namespace WindBot.Game.AI
 
         public void SendAttack(string attacker, string defender)
         {
-            if (defender=="monster")
+            if (defender == "monster")
             {
                 defender = _facedownmonstername;
             }

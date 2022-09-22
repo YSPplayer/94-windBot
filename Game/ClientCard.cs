@@ -54,7 +54,7 @@ namespace WindBot.Game
         public IDictionary<int, int> ActionActivateIndex { get; private set; }
 
         public ClientCard(int id, CardLocation loc, int sequence)
-            : this(id, loc, -1 , 0)
+            : this(id, loc, -1, 0)
         {
         }
 
@@ -144,7 +144,8 @@ namespace WindBot.Game
             }
             if ((flag & (int)Query.Owner) != 0)
                 Owner = duel.GetLocalPlayer(packet.ReadInt32());
-            if ((flag & (int)Query.Status) != 0) {
+            if ((flag & (int)Query.Status) != 0)
+            {
                 int status = packet.ReadInt32();
                 const int STATUS_DISABLED = 0x0001;
                 const int STATUS_PROC_COMPLETE = 0x0008;

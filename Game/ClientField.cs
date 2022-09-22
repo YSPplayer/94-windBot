@@ -39,6 +39,42 @@ namespace WindBot.Game
                 ExtraDeck.Add(new ClientCard(0, CardLocation.Extra, -1));
         }
 
+        /////zdiy/////
+        public List<ClientCard> GetFields()
+        {
+            List<ClientCard> cards = new List<ClientCard>();
+            cards.AddRange(GetCards(MonsterZone));
+            cards.AddRange(GetCards(SpellZone));
+            if (cards.Count() <= 0) cards = null;
+            return cards;
+        }
+        public List<ClientCard> GetHands()
+        {
+            return GetCards(Hand);
+        }
+        public int GetCountCardInZone(IEnumerable<ClientCard> cards, int level, CardRace race, bool isLevelAbove = false, bool isContainRace = false, bool isContianLevel = false)
+        {
+            return cards.Count(card => card != null && ((isLevelAbove ? card.Level >= level : card.Level <= level) || !isContianLevel) && (card.Race == (int)race || !isContainRace));
+        }
+        public int GetCountCardInZone(IEnumerable<ClientCard> cards, CardType type, int setcode, bool onlyFaceUp = false, bool canBeTarget = false)
+        {
+            return cards.Count(card => card != null && card.HasType(type) && card.HasSetcode(setcode) && !(onlyFaceUp && card.IsFacedown()) && !(canBeTarget && card.IsShouldNotBeTarget()));
+        }
+
+        public int GetCountCardInZone(IEnumerable<ClientCard> cards, int setcode, bool onlyFaceUp = false, bool canBeTarget = false)
+        {
+            return cards.Count(card => card != null && card.HasSetcode(setcode) && !(onlyFaceUp && card.IsFacedown()) && !(canBeTarget && card.IsShouldNotBeTarget()));
+        }
+        public List<ClientCard> GetCardInZone(IEnumerable<ClientCard> cards, CardType type, int setcode, bool onlyFaceUp = false, bool canBeTarget = false)
+        {
+            return cards.Where(card => card != null && card.HasType(type) && card.HasSetcode(setcode) && !(onlyFaceUp && card.IsFacedown()) && !(canBeTarget && card.IsShouldNotBeTarget())).ToList();
+        }
+        public List<ClientCard> GetCardInZone(IEnumerable<ClientCard> cards, int setcode, bool onlyFaceUp = false, bool canBeTarget = false)
+        {
+            return cards.Where(card => card != null && card.HasSetcode(setcode) && !(onlyFaceUp && card.IsFacedown()) && !(canBeTarget && card.IsShouldNotBeTarget())).ToList();
+        }
+
+        /////zdiy/////
         public int GetMonstersExtraZoneCount()
         {
             int count = 0;
@@ -85,7 +121,7 @@ namespace WindBot.Game
                 count++;
             if (MonsterZone[zone] != null)
                 count++;
-            if(zone == 1 && IncludeExtraMonsterZone)
+            if (zone == 1 && IncludeExtraMonsterZone)
             {
                 if (MonsterZone[5] != null)
                     count++;
@@ -177,7 +213,7 @@ namespace WindBot.Game
         {
             return HasInCards(Graveyard, cardId);
         }
-    
+
         public bool HasInGraveyard(IList<int> cardId)
         {
             return HasInCards(Graveyard, cardId);

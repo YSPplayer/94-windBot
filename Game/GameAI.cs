@@ -32,7 +32,12 @@ namespace WindBot.Game
         {
             _dialogs.SendSorry();
         }
-
+        /////zdiy/////
+        public void Prompting(string name)
+        {
+            _dialogs.SendKeyMessage(name);
+        }
+        /////zdiy/////
         public void OnDeckError(string card)
         {
             _dialogs.SendDeckSorry(card);
@@ -102,7 +107,7 @@ namespace WindBot.Game
             m_option = -1;
             m_yesno = -1;
             m_announce = 0;
-           
+
             m_place = 0;
             if (Duel.Player == 0 && Duel.Phase == DuelPhase.Draw)
             {
@@ -126,9 +131,9 @@ namespace WindBot.Game
         /// <param name="player">Player who is currently chaining.</param>
         public void OnChaining(ClientCard card, int player)
         {
-            Executor.OnChaining(player,card);
+            Executor.OnChaining(player, card);
         }
-        
+
         /// <summary>
         /// Called when a chain has been solved.
         /// </summary>
@@ -319,7 +324,7 @@ namespace WindBot.Game
             // If we're forced to chain, we chain the first card. However don't do anything.
             return forced ? 0 : -1;
         }
-        
+
         /// <summary>
         /// Called when the AI has to use one or more counters.
         /// </summary>
@@ -392,12 +397,12 @@ namespace WindBot.Game
             Executor.SetMain(main);
             foreach (CardExecutor exec in Executor.Executors)
             {
-            	if (exec.Type == ExecutorType.GoToEndPhase && main.CanEndPhase && exec.Func()) // check if should enter end phase directly
+                if (exec.Type == ExecutorType.GoToEndPhase && main.CanEndPhase && exec.Func()) // check if should enter end phase directly
                 {
                     _dialogs.SendEndTurn();
                     return new MainPhaseAction(MainPhaseAction.MainAction.ToEndPhase);
                 }
-                if (exec.Type==ExecutorType.GoToBattlePhase && main.CanBattlePhase && exec.Func()) // check if should enter battle phase directly
+                if (exec.Type == ExecutorType.GoToBattlePhase && main.CanBattlePhase && exec.Func()) // check if should enter battle phase directly
                 {
                     return new MainPhaseAction(MainPhaseAction.MainAction.ToBattlePhase);
                 }
@@ -463,7 +468,7 @@ namespace WindBot.Game
                 return new MainPhaseAction(MainPhaseAction.MainAction.ToBattlePhase);
 
             _dialogs.SendEndTurn();
-            return new MainPhaseAction(MainPhaseAction.MainAction.ToEndPhase); 
+            return new MainPhaseAction(MainPhaseAction.MainAction.ToEndPhase);
         }
 
         /// <summary>
@@ -752,7 +757,7 @@ namespace WindBot.Game
         // _ Others functions _
         // Those functions are used by the AI behavior.
 
-        
+
         private CardSelector m_materialSelector;
         private int m_materialSelectorHint;
         private int m_place;

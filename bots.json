@@ -1,0 +1,184 @@
+{
+  "windbots": [
+    {
+      "name": "悠悠",
+      "deck": "MokeyMokey",
+      "dialog": "mokey.zh-CN"
+    },
+    {
+      "name": "悠悠王",
+      "deck": "MokeyMokeyKing",
+      "dialog": "mokey.zh-CN"
+    },
+    {
+      "name": "尼亞－幻变骚灵",
+      "deck": "Altergeist",
+      "dialog": "near.zh-CN"
+    },
+    {
+      "name": "复制植物-青眼",
+      "deck": "Blue-Eyes",
+      "dialog": "copy.zh-CN"
+    },
+    {
+      "name": "MAX龍果",
+      "deck": "BlueEyesMaxDragon",
+      "dialog": "kiwi.zh-TW"
+    },
+    {
+      "name": "我太帅了-水百凤凰勇者",
+      "deck": "Brave",
+      "dialog": "smart.zh-CN"
+    },
+    {
+      "name": "永远之魂-削血",
+      "deck": "Burn",
+      "dialog": "soul.zh-CN"
+    },
+    {
+      "name": "燃血鬥士",
+      "deck": "ChainBurn",
+      "dialog": "kiwi.zh-TW"
+    },
+    {
+      "name": "试作型机器人1732",
+      "deck": "ST1732",
+      "dialog": "zh-CN"
+    },
+    {
+      "name": "奇魔果",
+      "deck": "DarkMagician",
+      "dialog": "kiwi.zh-TW"
+    },
+    {
+      "name": "谜之剑士LV4-龙骑星爆",
+      "deck": "Dragunity",
+      "dialog": "swordsman.zh-CN"
+    },
+    {
+      "name": "我太帅了-真红眼龙骑士",
+      "deck": "Dragun",
+      "dialog": "smart.zh-CN"
+    },
+    {
+      "name": "VI-1911-凭依装着",
+      "deck": "FamiliarPossessed",
+      "dialog": "VI-1911.zh-CN"
+    },
+    {
+      "name": "永远之魂-青蛙",
+      "deck": "Frog",
+      "dialog": "soul.zh-CN"
+    },
+    {
+      "name": "報社鬥士",
+      "deck": "GrenMajuThunderBoarder",
+      "dialog": "kiwi.zh-TW"
+    },
+    {
+      "name": "永远之魂-荷鲁斯",
+      "deck": "Horus",
+      "dialog": "soul.zh-CN"
+    },
+    {
+      "name": "奇異果",
+      "deck": "LightswornShaddoldinosour",
+      "dialog": "kiwi.zh-TW"
+    },
+    {
+      "name": "斩机",
+      "deck": "MathMech",
+      "dialog": "near.zh-CN"
+    },
+    {
+      "name": "复制梁龙-自奏圣乐",
+      "deck": "Orcust",
+      "dialog": "anothercopy.zh-CN"
+    },
+    {
+      "name": "幻煌果",
+      "deck": "Phantasm",
+      "dialog": "kiwi.zh-TW"
+    },
+    {
+      "name": "尼亚-机壳",
+      "deck": "Qliphort",
+      "dialog": "near.zh-CN"
+    },
+    {
+      "name": "谜之剑士LV4-R5",
+      "deck": "Rank V",
+      "dialog": "swordsman.zh-CN"
+    },
+    {
+      "name": "琪露诺-彩虹",
+      "deck": "Rainbow",
+      "dialog": "cirno.zh-CN"
+    },
+    {
+      "name": "谜之剑士LV4-L8",
+      "deck": "Level VIII",
+      "dialog": "swordsman.zh-CN"
+    },
+    {
+      "name": "复制梁龙-转生炎兽",
+      "deck": "Salamangreat",
+      "dialog": "anothercopy.zh-CN"
+    },
+    {
+      "name": "复制梁龙-闪刀姬",
+      "deck": "SkyStriker",
+      "dialog": "anothercopy.zh-CN"
+    },
+    {
+      "name": "VI-1911-时劫者",
+      "deck": "TimeThief",
+      "dialog": "VI-1911.zh-CN"
+    },
+    {
+      "name": "琪露诺-饼蛙",
+      "deck": "Toadally Awesome",
+      "dialog": "cirno.zh-CN"
+    },
+    {
+      "name": "尼亚-淘气仙星",
+      "deck": "Trickstar",
+      "dialog": "near.zh-CN"
+    },
+    {
+      "name": "比特机灵-微风",
+      "deck": "PureWinds",
+      "dialog": "zh-CN"
+    },
+    {
+      "name": "玻璃女巫",
+      "deck": "Witchcraft",
+      "dialog": "verre.zh-CN"
+    },
+    {
+      "name": "尼亚-妖仙兽",
+      "deck": "Yosenju",
+      "dialog": "near.zh-CN"
+    },
+    {
+      "name": "谜之剑士LV4-异热同心武器",
+      "deck": "Zexal Weapons",
+      "dialog": "swordsman.zh-CN"
+    },
+    {
+      "name": "复制植物-十二兽",
+      "deck": "Zoodiac",
+      "dialog": "copy.zh-CN"
+    },
+    {
+      "name": "94-01",
+      "deck": "94-ChamDeck",
+      "dialog": "near.zh-CN"
+    },
+    {
+      "name": "94-我更帅了",
+      "deck": "94-DragonDisaster",
+      "dialog": "94_DragonDisaster.zh-CN"
+    }
+  ]
+}

@@ -63,7 +63,7 @@ namespace WindBot.Game
 
         public int GetCountCardInZone(IEnumerable<ClientCard> cards, int setcode, bool onlyFaceUp = false, bool canBeTarget = false)
         {
-            return cards.Count(card => card != null && card.HasSetcode(setcode) && !(onlyFaceUp && card.IsFacedown()) && !(canBeTarget && card.IsShouldNotBeTarget()));
+          return cards.Count(card => card != null && card.HasSetcode(setcode) && !(onlyFaceUp && card.IsFacedown()) && !(canBeTarget && card.IsShouldNotBeTarget()));
         }
         public List<ClientCard> GetCardInZone(IEnumerable<ClientCard> cards, CardType type, int setcode, bool onlyFaceUp = false, bool canBeTarget = false)
         {

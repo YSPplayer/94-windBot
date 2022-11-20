@@ -206,7 +206,7 @@ namespace WindBot.Game.AI.Decks
         //格子
         public int SelectSTPlace(ClientCard card = null, bool avoid_Impermanence = false)
         {
-            AI.SelectCard(CardId.Dujiaoshou, CardId.Diannaowangwakuang);
+            //AI.SelectCard(CardId.Dujiaoshou, CardId.Diannaowangwakuang);
             List<int> list = new List<int> { 0, 1, 2, 3, 4 };
             int n = list.Count;
             while (n-- > 1)

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using WindBot;
 using WindBot.Game;
 using WindBot.Game.AI;
-
 namespace WindBot.Game.AI.Decks
 {
     [Deck("Altergeist", "AI_Altergeist")]

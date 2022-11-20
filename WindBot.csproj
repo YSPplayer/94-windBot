@@ -71,6 +71,7 @@
     <Compile Include="Game\AI\DecksManager.cs" />
     <Compile Include="Game\AI\Decks\94_ChamDeckExecutor.cs" />
     <Compile Include="Game\AI\Decks\94_DragonDisasterExecutor.cs" />
+    <Compile Include="Game\AI\Decks\94_SimpleYuanExecutor.cs" />
     <Compile Include="Game\AI\Decks\AltergeistExecutor.cs" />
     <Compile Include="Game\AI\Decks\BraveExecutor.cs" />
     <Compile Include="Game\AI\Decks\FamiliarPossessedExecutor.cs" />
@@ -152,6 +153,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Decks\AI_94-SimpleYuan.ydk" />
     <None Include="sqlite3.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

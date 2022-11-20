@@ -46,7 +46,7 @@ namespace WindBot.Game.AI
         {
             return Program.Rand.Next(2) > 0;
         }
-
+        
         /// <summary>
         /// Called when the AI has to decide if it should attack
         /// </summary>

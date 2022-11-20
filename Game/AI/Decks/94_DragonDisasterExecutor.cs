@@ -366,7 +366,7 @@ namespace WindBot.Game.AI.Decks
             if (Moli_Select_2 || Moli_Select_3)
             {
                 if (Moli_Select_2) Moli_Select_2 = false;
-                if (Moli_Select_2) Moli_Select_3 = false;
+                if (Moli_Select_3) Moli_Select_3 = false;
                 List<ClientCard> res_cards = new List<ClientCard>();
                 IList<ClientCard> deck_cards = cards.Where(card => card.Location == CardLocation.Deck).ToList();
                 if (deck_cards.Count <= 0) deck_cards = new List<ClientCard>(cards);

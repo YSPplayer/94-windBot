@@ -99,10 +99,25 @@ namespace WindBot.Game.AI
                     InternalSendMessageForced(new[] { "Code 002" });
                     InternalSendMessageForced(new[] { "【周赛兑换积分人机】" });
                     break;
+                case "94-桐木圆":
+                    InternalSendMessageForced(new[] { "人机信息:" });
+                    InternalSendMessageForced(new[] { "Diy By 阿圆" });
+                    InternalSendMessageForced(new[] { "Script By 神数不神" });
+                    InternalSendMessageForced(new[] { "Creative Time [2022-10-8]-[2022-10-21]" });
+                    InternalSendMessageForced(new[] { "Code 003" });
+                    InternalSendMessageForced(new[] { "【周赛兑换积分人机】" });
+                    break;
                 default:
                     break;
             }
 
+        }
+        /////zdiy/////
+
+        /////zdiy/////
+        public void SendAiMessage(string message)
+        {
+            _game.Chat(message);
         }
         /////zdiy/////
         public void SendDeckSorry(string card)

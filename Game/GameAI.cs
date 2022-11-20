@@ -38,6 +38,13 @@ namespace WindBot.Game
             _dialogs.SendKeyMessage(name);
         }
         /////zdiy/////
+
+        //////zdiy/////
+        public void SendAiMessage(string message)
+        {
+            _dialogs.SendAiMessage(message);
+        }
+        //////zdiy/////
         public void OnDeckError(string card)
         {
             _dialogs.SendDeckSorry(card);

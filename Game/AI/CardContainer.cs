@@ -7,6 +7,7 @@ namespace WindBot.Game.AI
 {
     public static class CardContainer
     {
+        //默认从小到大
         public static int CompareCardAttack(ClientCard cardA, ClientCard cardB)
         {
             if (cardA.Attack < cardB.Attack)
